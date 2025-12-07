@@ -1,0 +1,34 @@
+.header {
+  background: #2c5530;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
