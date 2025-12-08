@@ -1,0 +1,22 @@
+/* frontend/src/components/Complex/ComplexCard.module.css */
+.card {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Для статусов */
+.statusPlanning { background: #ffc107; color: #000; }
+.statusConstruction { background: #17a2b8; color: white; }
+.statusCompleted { background: #28a745; color: white; }
+
+/* Остальные стили... */
