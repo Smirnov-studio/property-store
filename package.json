@@ -1,8 +1,11 @@
 {
   "name": "property-store",
   "version": "1.0.0",
+  "homepage": "https:/Smirnov-studio.github.io/property-store",
   "description": "Property Store - Real Estate Application",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:backend": "cd backend && npm start",
@@ -18,9 +21,15 @@
     "clean": "rmdir /s /q node_modules 2>nul && cd backend && rmdir /s /q node_modules 2>nul && cd ../frontend && rmdir /s /q node_modules 2>nul && echo \"All node_modules cleaned\""
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "gh-pages": "^6.3.0"
   },
-  "keywords": ["real-estate", "property", "react", "nodejs"],
+  "keywords": [
+    "real-estate",
+    "property",
+    "react",
+    "nodejs"
+  ],
   "author": "",
   "license": "ISC",
   "engines": {
